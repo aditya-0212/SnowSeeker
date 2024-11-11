@@ -17,7 +17,7 @@ struct ContentView: View {
         if searchText.isEmpty {
             resorts
         } else {
-           resorts.filter { $0.name.localizedStandardContains(searchText)}
+            resorts.filter { $0.name.localizedStandardContains(searchText)}
         }
     }
     var body: some View {
@@ -36,16 +36,14 @@ struct ContentView: View {
                                 RoundedRectangle(cornerRadius: 5)
                                     .stroke(.black, lineWidth: 1)
                             )
-
                         VStack(alignment: .leading) {
                             Text(resort.name)
                                 .font(.headline)
                             Text("\(resort.runs) runs")
                                 .foregroundStyle(.secondary)
                         }
-                        
                         if favorites.contains(resort) {
-                            Spacer()
+                        
                             
                             Image(systemName: "heart.fill")
                                 .accessibilityLabel("This is  a favorite resort")

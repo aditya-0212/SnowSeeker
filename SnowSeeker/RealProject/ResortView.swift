@@ -47,7 +47,7 @@ struct ResortView: View {
                                         showingFacility = true
                                     } label:{
                                         facility.icon
-                                            .font(.title)
+//                                            .font(.title)
                                     }
                                 }
                             }
